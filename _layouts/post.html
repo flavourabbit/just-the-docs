@@ -5,6 +5,6 @@ layout: default
 {{ content }}
 
 
-{%- if site.disqus.shortname and page.comments == true -%}
+{%- if site.utterances == true and page.comments == true -%}
   {%- include utterances_comments.html -%}
 {%- endif -%}
